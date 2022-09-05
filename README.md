@@ -1,2 +1,1 @@
-#fullpage example
-## demo: https://csslick.github.io/fullpage/
+## portfolio2022 - fullpage
