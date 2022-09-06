@@ -91,6 +91,9 @@
   #section2 {
     background: var(--about-page-color);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   #section2 .container {
@@ -106,6 +109,12 @@
   
   #profileImg {
     margin-right: 10%;
+    width: 16%;
+  }
+
+  #profileImg img {
+    width: 300px;
+    height: 400px;
   }
   
   .r-cont {
