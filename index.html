@@ -1,226 +1,157 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>UNA's portfolio</title>
-  <link rel='stylesheet' href='./css/jquery.fullpage.css'>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-  <link rel="icon" href="./images/unaLogo.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNA's portfolio</title>
 
-  <link 
-  rel="stylesheet" 
-  href="./css/mobile.css" 
-  media="screen and (max-width: 767px)"
->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
-<link 
-  rel="stylesheet" 
-  href="./css/pc.css"
-  media="screen and (min-width: 768px)"
->
+    <link 
+    rel="stylesheet" 
+    href="./css/mobile.css" 
+    media="screen and (max-width: 767px)"
+    >
+
+    <link 
+    rel="stylesheet" 
+    href="./css/pc.css"
+    media="screen and (min-width: 768px)"
+    >
+
+    
 </head>
 <body>
-<!-- 메뉴는 fullpage 바깥에 추가 
-  data-menuanchor와 동명의 섹셕 id 값을 fullpage({}) 옵션anchors[]에 추가
--->
-<ul id="menu">
-  <a href="#YunasPortfolio" data-menuanchor="YunasPortfolio" class="active homeBtn"><img src="./images/unaLogo.svg" alt="UNA"></a>
+    <header>
+            <a href="#frontPage" class="logo"><img src="#" alt="una"></a>
+            <nav>
+                <a href="#aboutPage" class="aboutBtn">about</a>
+                <a href="#worksPage" class="worksBtn">works</a>
+                <a href="#contactPage" class="contactBtn">contact</a>
+            </nav>
+    </header>
+    <!-- header -->
 
-  <div class="nav">
-    <li data-menuanchor="About"><a href="#About">ABOUT</a></li>
-	  <li data-menuanchor="Works"><a href="#Works">WORKS</a></li>
-	  <li data-menuanchor="Contact"><a href="#Contact">CONTACT</a></li>
-  </div>
-</ul>
-
-<div id="fullpage">
-    <div class="section" id="section1">
-      <div class="container">
-        <h3>Web designer<br>
-          Yuna Kim</h3>
-        <h1>Portfolio<span>2022</span></h1>
-      </div>
-    </div>
-
-    <div class="section" id="section2">
-      <div class="container">
-        <img src="http://placeimg.com/300/400/a" alt="" id="profileImg">
-        <div class="r-cont">
-          <!-- <h3 class="intro"></h3> -->
-          <div class="middle">
-            <div class="profile">
-              <h3>PROFILE</h3>
-              <p>NAME: 김유나</p>
-              <p>BIRTH: 2003.02.17</p>
-              <p>BIRTH: 2003.02.17</p>
+    <main>
+        <section id="frontPage">
+                <h3>WebDesigner<br>YunaKim</h3>
+                <h1>Portfolio<span>2022</span></h1>
+        </section>
+        <section id="aboutPage">
+            <div class="aboutWrap">
+                <img src="./images/profileImg.jpg" alt="profile Img" class="profileImg">
+                <div class="profileContents">
+                    <div class="intro">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eaque ut omnis fugit ullam?</p>
+                    </div>
+                    <div class="middle">
+                        <div class="profile">
+                            <h3>PROFILE</h3>
+                            <p><span>NAME:</span>김유나</p>
+                            <p><span>BIRTH:</span>2003.02.17</p>
+                            <p><span>?:</span>??????????</p>
+                        </div>
+                        <div class="edu">
+                            <h3>EDUCATION</h3>
+                            <p>검단고등학교 졸업</p>
+                            <p>김포이젠아카데미 UI/UX 웹퍼블리셔 과정 수료</p>
+                        </div>
+                        <div class="certification">
+                        <h3>CERTIFICATION</h3>
+                        <p>GTQ 1급 ---</p>
+                        <p>웹디자인기능사 ---</p>
+                    </div>
+                    </div>
+                    <div class="skills">
+                        <h3>skills</h3>
+                        <div class="skill">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>jQuery</p>
+                            <p>Photoshop</p>
+                            <p>Illustrator</p>
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-  
-            <div class="edu">
-              <h3>EDUCATION</h3>
-              <p>--고등학교 졸업</p>
-              <p>이젠아카데미 UI/UX 과정 이수</p>
-            </div>
-            
-            <div class="certi">
-              <h3>CERTIFICATION</h3>
-              <p>GTQ 1급</p>
-              <p>웹디자인기능사</p>
-            </div>
+        </section>
+        <section id="worksPage">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="" alt="img" class="muImg">
+                    <div class="detailWrap">
+                        <img src="" alt="" class="brandLogo">
+                        <h2>20th Century Studios</h2>
+                        <h4>OverView</h4>
+                        <p>강력한 펑크룩의 대명사인 viviennewestwood의<br>
+                        모바일 페이지입니다. 사용자들이 모바일 페이지를<br>
+                        편안하게 이용하면서 갤러리를 구경하는듯한 느낌을<br>
+                        주고싶어 만들게 되었습니다.</p>
+                    <div class="detailBtn">
+                        <button class="web">웹페이지</button>
+                        <button class="pdf">pdf 자료</button>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </section>
+        <section id="contactPage">
+            <div class="container contactCont">
+                <div class="l-cont">
+                    <h1>CONTACT</h1>
+                    <p>제 포트폴리오를 봐주셔서 감사합니다. <br>
+                       제 작업물이 마음에 드셨거나, 궁금한 사항이 있으시다면 <br>
+                       편안하게 연락주시기 바랍니다.</p>
+                   <a href="tel:010-0000-0000"><strong>PHONE: </strong>010-0000-0000</a>
+                   <a href="mailto:iamsixna@gmail.com"><strong>E-MAIL: </strong>iamsixna@gmail.com</a>
+                   <a href="https://github.com/six6na/portfoli_pre"><strong>GITHUB: </strong>https://github.com/six6na/portfoli_pre</a>
+               </div>
+               <div class="r-cont">
+                   <div class="mail">
+                       <form method="post" action="#" class="mailForm">
+                           <div class="name">
+                               <input type="text" name="name" placeholder="NAME">
+                           </div>
+                           <div class="email">
+                               <input type="email" name="email" placeholder="E-MAIL">
+                           </div>
+                           <div class="name">
+                               <textarea name="message" id="message" cols="30" rows="10" placeholder="MESSAGE" style="width: 100%; height:125px"></textarea>
+                           </div>
+                       </form>
+                       <button type="submit" class="send">SEND</button>
+                   </div>
+               </div>    
           </div>
-  
-          <div class="skills">
-            <h3>SKILLS</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>figma</li>
-              <li>photoshop</li>
-              <li>illustrator</li>
-            </ul>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-    
-    <div class="section" id="section3">
-      <div class="container">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/20th-mu.png" alt="" class="muImg">
-              <div class="detail-cont">
-              <img src="./images/20th-logo.png" alt="" class="brandImg">
-              <h1>20TH CENTURY STUDIOS</h1>
-              <h3>OverView</h3>
-              <p>오랫동안 사랑받아온 20세기 영화사의 모바일 <br>
-                페이지입니다.  20세기 영화사의 다양한 콘텐츠를<br>
-                어떻게 하면 더 편리하게 접할 수 있을까? 라는 생각을<br>
-                바탕으로 제작하게 되었습니다. </p>
-              <div class="btns">
-                <a href="https://six6na.github.io/20thCenturyStudios_/">웹페이지</a>
-                <a href="#">pdf 자료</a>
-              </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/vivienne-mu.png" alt="" class="muImg">
-              <div class="detail-cont">
-              <img src="./images/vivienne-logo.png" alt="" class="brandImg">
-              <h1>VIVIENNE WESTWOOD</h1>
-              <h3>OverView</h3>
-              <p>강렬한 펑크룩의 대명사인 VIVIENNEWESTWOOD의 <br>
-                모바일 페이지입니다. 사용자들이 모바일 페이지를  <br>
-                편안하게 이용하면서 갤러리를 구경하는듯한 느낌을 <br>
-                주고싶어 만들게 되었습니다.</p>
-              <div class="btns">
-                <a href="#">웹페이지</a>
-                <a href="#">pdf 자료</a>
-              </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/kylie-mu.png" alt="" class="muImg">
-              <div class="detail-cont">
-              <img src="./images/kylie-logo.png" alt="" class="brandImg">
-              <h1>KYLIE SKIN</h1>
-              <h3>OverView</h3>
-              <p>Kylie Jenner가 출시한 스킨케어 라인 KYLIE SKIN의<br>
-                페이지 입니다. KYLIE가 가진 이미지를 KYLIE SKIN 페이지<br>
-                에서도 느낄 수 있으면 좋을것 같다는 생각에 제작하게 되었습니다.</p>
-              <div class="btns">
-                <a href="https://six6na.github.io/kylieskin/">웹페이지</a>
-                <a href="#">pdf 자료</a>
-              </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/br-mu 1.png" alt="" class="muImg">
-              <div class="detail-cont">
-              <img src="./images/br-logo.png" alt="" class="brandImg">
-              <h1>BASKIN ROBBINS BROWN</h1>
-              <h3>OverView</h3>
-              <p>배스킨 라빈스 브라운은 단 하나뿐인 매장이며 오직<br>
-                배스킨라빈스 브라운에서만 맛 볼 수 있는 메뉴도 있기<br>
-                때문에 이러한 특징을 살려 배스킨라빈스 브라운의 페이지를<br>
-                만들게 되었다.</p>
-              <div class="btns">
-                <a href="#">웹페이지</a>
-                <a href="#">pdf 자료</a>
-              </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/dip-mu 1.png" alt="" class="muImg">
-              <div class="detail-cont">
-              <img src="./images/diptyque-logo.png" alt="" class="brandImg">
-              <h1>DIPTYQUE</h1>
-              <h3>OverView</h3>
-              <p>딥디크 향수는 어딘가 특별한 매력을 가지고 있어<br>
-                많은 사람들에게 사랑을 받고있습니다. 다른 향수와<br>
-                다른 딥디크만의 매력이 잘 느껴지는 페이지를 만듬면<br>
-                좋겠다는 생각에 제작하게 되었습니다.</p>
-              <div class="btns">
-                <a href="https://six6na.github.io/diptyque/">웹페이지</a>
-                <a href="#">pdf 자료</a>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
+        </section>
+    </main>
 
-    </div>
-
-
-    <div class="section" id="section4">
-     <div class="container">
-      <div class="l-cont">
-        <h1>CONTACT</h1>
-        <p>
-          제 포트폴리오를 봐주셔서 감사합니다. <br>
-          제 작업물이 마음에 드셨거나, 궁금한 사항이 있으시다면 <br>
-          편안하게 연락주시기 바랍니다.
-        </p>
-  
-        <a href="tel:010-6698-5667"><strong>PHONE: </strong>010-6698-5667</a>
-        <a href="mailto:iamsixna@gmail.com"><strong>E-MAIL: </strong>iamsixna@gmail.com</a>
-        <a href="https://github.com/six6na?tab=repositories"><strong>GITHUB: </strong>https://github.com/six6na?tab=repositories</a>  
-      </div>
-
-      <div class="sendMail">
-        <div class="mailBox">
-          <form method="POST" action="https://formsubmit.co/el/xuvuga" class="mailForm">
-
-              <input class="name" type="text" name="name" placeholder="NAME" required>
-
-              <input class="email" type="email" name="email" placeholder="E-MAIL" required>
-
-              <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="MESSAGE" style="width: 100%; height: 125px;" required></textarea>
-              <button type="submit" class="send">SEND</button>
-          </form>
-        </div>
-        
-       </div>
-      </div>
-      <footer>
+    <footer>
         <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다. <br>
             사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 알려드립니다.</p>
         <p>Copyright ⓒ 2022 Webdesigner UNA. All Rights Reserved</p>
-      </footer>    
-     </div>
-     
-</div>
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script  src="./js/script.js"></script>
+    </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
