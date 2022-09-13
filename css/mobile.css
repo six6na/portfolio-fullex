@@ -27,6 +27,10 @@ header a {
     width: 30%;
 }
 
+.logo img {
+    width: 30%;
+}
+
 .aboutBtn {
     background: var(--about-page-color);
 }
@@ -170,14 +174,13 @@ header nav a {
     /* outline: 3px solid blue; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .muImg {
-    width: 60%;
-    height: 30%;
-    background: #fff;
+    width: 70%;
+    margin-bottom: 10%;
 }
 
 .detailWrap {
@@ -191,21 +194,25 @@ header nav a {
     margin-bottom: 5%;
     margin-top: 5%;
     font-size: 20px;
+    color: #fff;
 }
 
 .detailWrap h4 {
     margin-bottom:4%;
+    color: #fff;
 }
 
 .detailWrap p {
-    font-size: 12px;
+    color: #fff;
+    font-size: 14px;
 }
 
 .detailBtn {
-    margin-top: 4%;
+    margin-top: 8%;
 }
 
 .detailBtn button {
+    background: #fff;
     padding: 10px 15px;
     border: none;
 }

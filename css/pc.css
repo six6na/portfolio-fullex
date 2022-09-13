@@ -92,7 +92,7 @@ header nav a {
     align-items: center;
     justify-content: center;
     width: 90%;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .profileImg {
@@ -159,19 +159,23 @@ header nav a {
 }
 
 .muImg {
-    width: 60%;
-    height: 30%;
-    background: #fff;
+    width: 40%;
     margin-right: 3%;
 }
 
 .detailWrap h2 {
     margin-bottom: 5%;
     margin-top: 5%;
+    color: #fff;
 }
 
 .detailWrap h4 {
     margin-bottom:4%;
+    color: #fff;
+}
+
+.detailWrap p {
+    color: #fff;
 }
 
 .detailBtn {
@@ -180,6 +184,7 @@ header nav a {
 
 .detailBtn button {
     padding: 10px 15px;
+    background: #fff;
     border: none;
 }
 
